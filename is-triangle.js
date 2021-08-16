@@ -17,11 +17,11 @@ check.addEventListener("click", function () {
 });
 
 function CheckIfTriangle() {
-  if (a + b + c == 180) {
+  if (angle_one.value + angle_two.value + angle_three.value == 180) {
     result.innerText = "These angles make a triangle 🍕";
     result.style.display = "block";
   } else {
-    result.innerText = "These angles Does not make a trianle";
+    result.innerText = "These angles does not make a trianle";
     result.style.display = "block";
   }
 }
