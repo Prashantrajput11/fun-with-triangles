@@ -12,19 +12,24 @@ check.addEventListener("click", function () {
   if (a === "" || b === "" || c === "") {
     validateInputs();
   } else {
-    CheckIfTriangle();
+    if (
+      Number(angle_one.value) +
+        Number(angle_two.value) +
+        Number(angle_three.value) ===
+      180
+    ) {
+      result.innerText = "These angles make a triangle 🍕";
+      result.style.display = "block";
+    } else {
+      result.innerText = "These angles does not make a triangle";
+      result.style.display = "block";
+    }
   }
 });
 
-function CheckIfTriangle() {
-  if (angle_one.value + angle_two.value + angle_three.value == 180) {
-    result.innerText = "These angles make a triangle 🍕";
-    result.style.display = "block";
-  } else {
-    result.innerText = "These angles does not make a trianle";
-    result.style.display = "block";
-  }
-}
+// function CheckIfTriangle() {
+
+// }
 
 function validateInputs() {
   result.innerText = "Please enter valid values";
