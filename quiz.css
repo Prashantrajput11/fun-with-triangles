@@ -1,0 +1,45 @@
+:root {
+  --primary-color: #000;
+  --secondary-color: #495057;
+}
+
+body {
+  background: var(--primary-color);
+  color: #00f0ff;
+  font-size: 20px;
+}
+.question-container {
+  background-color: #495057;
+  display: block;
+  margin: 10px auto;
+  /* border: 2px solid red; */
+  text-align: center;
+  padding: 1.2rem 2.2rem;
+  border-radius: 4px;
+  width: 80%;
+}
+.question-container:hover {
+  background-color: #282b2e;
+}
+
+.output {
+  text-align: center;
+}
+#btn,
+#btn-back {
+  background-color: #000;
+  border: none;
+  padding: 0.2rem 0.1rem;
+  width: 30%;
+  margin: 15px auto;
+  border-radius: 4px;
+  box-shadow: 0px 0px 8px 0px #00f0ff;
+  color: #fff;
+  font-size: 20px;
+  display: block;
+}
+
+button a {
+  color: white;
+  text-decoration: none;
+}

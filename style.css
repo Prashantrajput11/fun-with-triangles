@@ -1,0 +1,38 @@
+:root {
+  --primary-color: #000;
+  --secondary-color: #495057;
+}
+body {
+  font-family: "Lato", sans-serif;
+  background-color: var(--primary-color);
+}
+.container {
+  margin-top: 40px;
+}
+
+.part-one,
+.part-two,
+.part-three,
+.part-four {
+  background-color: var(--secondary-color);
+
+  margin: 30px auto;
+  display: block;
+  border-radius: 5px;
+  text-align: center;
+  padding: 1.2rem 2.2rem;
+  border-radius: 4px;
+  width: 80%;
+}
+
+.part-one:hover,
+.part-two:hover,
+.part-three:hover,
+.part-four:hover {
+  background-color: #282b2e;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
