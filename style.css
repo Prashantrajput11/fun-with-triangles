@@ -36,6 +36,10 @@ a {
   color: white;
   text-decoration: none;
 }
+footer{
+  background-color: aqua;
+}
+
 .social {
   display: flex;
   justify-content: space-around;
